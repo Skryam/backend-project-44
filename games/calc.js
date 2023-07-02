@@ -12,7 +12,6 @@ const trueAnswer = (randomNumer1, randomNumer2) => {
   } if (arr[randomOperate] === arr[2]) {
     return String(randomNumer1 * randomNumer2);
   }
-  return trueAnswer;
 };
 
 const calc = () => {

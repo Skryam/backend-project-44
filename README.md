@@ -1,10 +1,7 @@
 <head>
 <h1 align="center">Welcome to Brain-Games <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
-Hexlet tests and linter status:
   
-[![Actions Status](https://github.com/Skryam/backend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Skryam/backend-project-44/actions)
-
-[![Maintainability](https://api.codeclimate.com/v1/badges/a9c5e1217c8e3509ef09/maintainability)](https://codeclimate.com/github/Skryam/backend-project-44/maintainability)
+[![Actions Status](https://github.com/Skryam/backend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Skryam/backend-project-44/actions)[![Maintainability](https://api.codeclimate.com/v1/badges/a9c5e1217c8e3509ef09/maintainability)](https://codeclimate.com/github/Skryam/backend-project-44/maintainability)
 
 <h2 align="center">Want to take a break and play fun games like finding the missing number in a progression or finding the largest divisor for a random number?<br>Then you found what you were looking for</h2>
 </head>
@@ -16,7 +13,7 @@ Hexlet tests and linter status:
    </ul>
 
 <h2 aling="left">installation</h2>
-<p>1. Clone git repo with bash command:<br><strong>git clone https://github.com/Skryam/backend-project-44.git</strong></p>
+<p>1. Clone git repo with git command:<br><strong>git clone https://github.com/Skryam/backend-project-44.git</strong></p>
 <p>2. Make <strong>npm link</strong> in the root directory of the repository</p>
 <p>3. Launch game with one of the following commands:</p>
   <h3>brain-even</h3>

@@ -1,4 +1,4 @@
-import logic from '../src/index.js';
+import commonLogic from '../index.js';
 
 const primeNum = () => {
   const randomNumer = (Math.round(Math.random() * 100));
@@ -19,4 +19,4 @@ const prime = () => {
   return [statement, question, trueAnswer];
 };
 
-export default logic(prime);
+export default () => commonLogic(prime);

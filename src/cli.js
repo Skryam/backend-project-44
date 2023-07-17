@@ -6,4 +6,4 @@ const name = () => {
   console.log(`${'Hello, '}${who}${'!'}`);
   return who;
 };
-export default name();
+export default name;

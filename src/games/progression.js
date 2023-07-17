@@ -1,4 +1,4 @@
-import logic from '../src/index.js';
+import commonLogic from '../index.js';
 
 const progress = () => {
   const min = (Math.ceil(Math.random() * 30));
@@ -19,4 +19,4 @@ const progression = () => {
   return [statement, question, trueAnswer];
 };
 
-export default logic(progression);
+export default () => commonLogic(progression);

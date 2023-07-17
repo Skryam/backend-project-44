@@ -1,4 +1,4 @@
-import logic from '../src/index.js';
+import commonLogic from '../index.js';
 
 const trueAnswer = (randomNumer1, randomNumer2) => {
   let divisor = 1;
@@ -22,4 +22,4 @@ const gcd = () => {
   return [statement, question, trueAnswer(randomNumer1, randomNumer2)];
 };
 
-export default logic(gcd);
+export default () => commonLogic(gcd);

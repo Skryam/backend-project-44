@@ -1,2 +1,4 @@
 #!/usr/bin/env node
-import even from '../games/calc.js'
+import run from '../src/games/calc.js';
+
+run();

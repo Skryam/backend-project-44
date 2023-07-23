@@ -22,7 +22,7 @@ const calc = () => {
   const randomNumber1 = randomNumber(1, 100);
   const randomNumber2 = randomNumber(1, 100);
   const operator = operators[randomOperatorIndex];
-  const question = (`${'Question: '}${randomNumber1} ${operator} ${randomNumber2}`);
+  const question = (`${randomNumber1} ${operator} ${randomNumber2}`);
   const trueAnswer = String(calculate(randomNumber1, randomNumber2, operator));
   return [question, trueAnswer];
 };

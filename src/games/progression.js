@@ -15,7 +15,7 @@ const progress = () => {
 const progression = () => {
   const [arr, trueAnswer] = progress();
   const statement = 'What number is missing in the progression?';
-  const question = (`${'Question: '}${arr}`);
+  const question = arr;
   return [statement, question, trueAnswer];
 };
 

@@ -1,22 +1,31 @@
 import commonLogic from '../index.js';
+import randomNumber from '../randomNumber.js';
 
-const progress = () => {
-  const min = (Math.ceil(Math.random() * 30));
-  const max = (Math.ceil(Math.random() * (130 - min) + min));
-  const step = Math.ceil((max - min) / 10);
-  const fin = Array.from({ length: 10 }, (v, i) => (i * step) + max);
-  const randomIndex = Math.floor(Math.random() * fin.length);
-  const trueAnswer = String(fin[randomIndex]);
-  fin[randomIndex] = '..';
-  const arr = fin.join(' ');
-  return [arr, trueAnswer];
+const buildProgression = () => {
+  let min = randomNumber(1, 80);
+  const arrayLength = randomNumber(5, 15);
+  const step = randomNumber(3, 60);
+  const progressionArray = [];
+  let acc = 0;
+  while (acc < arrayLength) {
+    progressionArray.push(min);
+    min += step;
+    acc += 1;
+  }
+  const randomIndex = randomNumber(0, progressionArray.length);
+  const hiddenElement = (progressionArray[randomIndex]);
+  progressionArray[randomIndex] = '..';
+  const progression = progressionArray.join(' ');
+  return [progression, hiddenElement];
 };
 
-const progression = () => {
-  const [arr, trueAnswer] = progress();
-  const statement = 'What number is missing in the progression?';
-  const question = arr;
-  return [statement, question, trueAnswer];
+const statement = 'What number is missing in the progression?';
+
+const getProgressionGame = () => {
+  const [progression, hiddenElement] = buildProgression();
+  const question = progression;
+  const trueAnswer = String(hiddenElement);
+  return [question, trueAnswer];
 };
 
-export default () => commonLogic(progression);
+export default () => commonLogic(getProgressionGame, statement);

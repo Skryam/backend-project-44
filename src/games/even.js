@@ -1,13 +1,7 @@
 import commonLogic from '../index.js';
 import randomNumber from '../randomNumber.js';
 
-const isEven = (number) => {
-  let result;
-  if (number % 2 === 0) {
-    result = true;
-  }
-  return result;
-};
+const isEven = (number) => number % 2 === 0;
 
 const statement = 'Answer "yes" if the number is even, otherwise answer "no".';
 

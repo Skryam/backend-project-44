@@ -2,15 +2,12 @@ import commonLogic from '../index.js';
 import randomNumber from '../randomNumber.js';
 
 const isPrime = (number) => {
-  let result;
   for (let i = 2; i < number; i += 1) {
     if (number % i === 0) {
-      result = false;
-      return result;
+      return false;
     }
   }
-  result = true;
-  return result;
+  return true;
 };
 
 const statement = 'Answer "yes" if given number is prime. Otherwise answer "no"';

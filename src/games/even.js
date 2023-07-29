@@ -1,14 +1,21 @@
 import commonLogic from '../index.js';
 import randomNumber from '../randomNumber.js';
 
-const trueAnswer = (number) => ((number % 2 === 0) ? 'yes' : 'no');
+const isEven = (number) => {
+  let result;
+  if (number % 2 === 0) {
+    result = true;
+  }
+  return result;
+};
 
 const statement = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const even = () => {
+const getEven = () => {
   const random = randomNumber(20, 1000);
   const question = random;
-  return [question, trueAnswer(random)];
+  const trueAnswer = isEven(random) ? 'yes' : 'no';
+  return [question, trueAnswer];
 };
 
-export default () => commonLogic(even, statement);
+export default () => commonLogic(getEven, statement);

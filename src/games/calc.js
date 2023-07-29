@@ -17,7 +17,7 @@ const calculate = (randomNumber1, randomNumber2, operator) => {
   }
 };
 
-const calc = () => {
+const getCalc = () => {
   const randomOperatorIndex = randomNumber(0, 2);
   const randomNumber1 = randomNumber(1, 100);
   const randomNumber2 = randomNumber(1, 100);
@@ -27,4 +27,4 @@ const calc = () => {
   return [question, trueAnswer];
 };
 
-export default () => commonLogic(calc, statement);
+export default () => commonLogic(getCalc, statement);

@@ -15,11 +15,11 @@ const isPrime = (number) => {
 
 const statement = 'Answer "yes" if given number is prime. Otherwise answer "no"';
 
-const prime = () => {
+const getPrime = () => {
   const random = randomNumber(1, 100);
   const question = random;
   const trueAnswer = isPrime(random) ? 'yes' : 'no';
   return [question, trueAnswer];
 };
 
-export default () => commonLogic(prime, statement);
+export default () => commonLogic(getPrime, statement);

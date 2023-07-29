@@ -14,7 +14,7 @@ const findGCD = (a, b) => {
 
 const statement = 'Find the greatest common divisor of given numbers.';
 
-const gcd = () => {
+const getGCD = () => {
   const randomNumber1 = randomNumber(1, 100);
   const randomNumber2 = randomNumber(1, 100);
   const question = (`${randomNumber1} ${randomNumber2}`);
@@ -22,4 +22,4 @@ const gcd = () => {
   return [question, trueAnswer];
 };
 
-export default () => commonLogic(gcd, statement);
+export default () => commonLogic(getGCD, statement);

@@ -12,7 +12,7 @@ const buildProgression = () => {
     min += step;
     acc += 1;
   }
-  const randomIndex = randomNumber(0, progressionArray.length);
+  const randomIndex = randomNumber(0, (progressionArray.length) - 1);
   const hiddenElement = (progressionArray[randomIndex]);
   progressionArray[randomIndex] = '..';
   const progression = progressionArray.join(' ');

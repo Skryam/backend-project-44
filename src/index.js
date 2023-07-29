@@ -1,14 +1,9 @@
 import readlineSync from 'readline-sync';
 
-const sayMyName = () => {
+const commonLogic = (game, statement) => {
   console.log('Welcome to the Brain Games!');
   const who = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${who}!`);
-  return who;
-};
-
-const commonLogic = (game, statement) => {
-  const who = sayMyName();
   let step = 0;
   const roundsCount = 3;
   console.log(statement);
